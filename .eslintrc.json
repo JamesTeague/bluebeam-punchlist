@@ -1,0 +1,53 @@
+{
+    "env": {
+        "browser": true,
+        "mocha": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb",
+        "plugin:flowtype/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "allowImportExportEverywhere": true
+    },
+    "plugins": [
+        "react",
+        "flowtype"
+    ],
+    "rules": {
+        "no-console": 0,
+        "no-underscore-dangle": "off",
+        "implicit-arrow-linebreak": "off",
+        "import/no-unresolved": "off",
+        "react/jsx-curly-brace-presence": "off",
+        "operator-linebreak": [
+            "error",
+            "before",
+            {
+                "overrides": {
+                    "=": "ignore"
+                }
+            }
+        ],
+        "quotes": ["error", "single", { "allowTemplateLiterals": true }]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": ["node_modules"]
+            }
+        }
+    }
+}

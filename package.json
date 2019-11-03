@@ -1,0 +1,44 @@
+{
+  "name": "bluebeam",
+  "private": true,
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run build && node packages/punchlist/lib/index.js",
+    "lerna": "lerna",
+    "rebuild": "npm run build",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "docs": "lerna run docs",
+    "flow": "flow",
+    "flow-typed": "flow-typed",
+    "eslint": "eslint"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/plugin-transform-destructuring": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.3.1",
+    "babel-plugin-dynamic-import-node": "^2.2.0",
+    "babel-plugin-flow-runtime": "^0.18.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2",
+    "flow-bin": "^0.102.0",
+    "flow-typed": "^2.5.2",
+    "lerna": "^3.15.0"
+  }
+}
