@@ -68,7 +68,7 @@ const seed = () => {
   userMap.set(user2.id, user2);
 
   const item1 = {
-    id: uuid(),
+    id: '126177f4-bbba-4d87-bb3e-d4b53eceb0f5',
     createdAt: moment().utc().toISOString(),
     status: PunchItemStatusEnum.Open,
     projectId: project1.id,
@@ -77,7 +77,7 @@ const seed = () => {
   };
 
   const item2 = {
-    id: uuid(),
+    id: '79f81804-ba63-4c8f-953a-43c8e6caeae9',
     createdAt: moment().utc().toISOString(),
     status: PunchItemStatusEnum.Open,
     projectId: project1.id,
@@ -86,7 +86,7 @@ const seed = () => {
   };
 
   const item3 = {
-    id: uuid(),
+    id: 'c650b7e7-8061-454c-9991-a3c590808f1a',
     createdAt: moment().utc().toISOString(),
     status: PunchItemStatusEnum.Open,
     projectId: project2.id,
@@ -95,7 +95,7 @@ const seed = () => {
   };
 
   const item4 = {
-    id: uuid(),
+    id: 'de273e2a-6021-4ae8-b0ae-06d881fc0489',
     createdAt: moment().utc().toISOString(),
     status: PunchItemStatusEnum.Open,
     projectId: project2.id,
@@ -104,7 +104,7 @@ const seed = () => {
   };
 
   const item5 = {
-    id: uuid(),
+    id: '1c7acf8d-c2cf-46f4-a417-557bb2371563',
     createdAt: moment().utc().toISOString(),
     status: PunchItemStatusEnum.Open,
     projectId: project2.id,
@@ -117,6 +117,7 @@ const seed = () => {
   punchItemMap.set(item3.id, item3);
   punchItemMap.set(item4.id, item4);
   punchItemMap.set(item5.id, item5);
+
 };
 
 seed();

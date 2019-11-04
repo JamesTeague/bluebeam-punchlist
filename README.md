@@ -80,8 +80,6 @@ If there are 5 or fewer you should expect an empty array.
 
 Should you desire to see more data added to try to test the limits of what I was able to do in the 
 amount of time I had, there is a mutation to add items.
-Unfortunately there is no way to assign users to the new items. Reading the document I did not gather
-that as a requirement. I did not realize the hole until I had written most of the code.
 ```graphql
 mutation createPunchItem {
     createPunchItem(projectId: "d3f83c2d-28f4-4747-b681-8ee433646b63", subject: "test2", status: IN_PROGRESS) {
@@ -89,6 +87,24 @@ mutation createPunchItem {
     }
 }
 ``` 
+
+Add or change assignee on an item
+```graphql
+    mutation updatePunchItem {
+        updatePunchItemAssignee(id: "1c7acf8d-c2cf-46f4-a417-557bb2371563",  assigneeId: "dca26e16-264b-45ed-bb35-6d48090f0f4b" ) {
+            success
+        }
+    }
+```
+
+Change status on an item
+```graphql
+    mutation updatePunchItem {
+        updatePunchItemStatus(id: "1c7acf8d-c2cf-46f4-a417-557bb2371563",  status: IN_PROGRESS ) {
+            success
+        }
+    }
+```
 
 Valid project ids are 
 - "cb712199-7a51-4d2f-a9ea-ab3f86353028"

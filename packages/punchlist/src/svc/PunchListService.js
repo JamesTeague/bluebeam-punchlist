@@ -44,7 +44,7 @@ export default class PunchListService implements IPunchListService {
 
   updatePunchItem(itemId: string, updateObject: $Shape<$Diff<PunchItem, { id: string }>>) {
     const punchItem = this.punchItemRepository.getPunchItemById(itemId);
-
+    
     if(!punchItem) {
       // TODO - Throw Error
     }

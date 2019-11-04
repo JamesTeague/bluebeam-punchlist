@@ -10,7 +10,8 @@ const RootMutation = gql`
   
   type RootMutation {
     createPunchItem(projectId: ID!, subject: String!, status: PunchItemStatus!): MutationResponse!
-#    updatePunchItem()
+    updatePunchItemStatus(id: ID!, status: PunchItemStatus!): MutationResponse!
+    updatePunchItemAssignee(id: ID!, assigneeId: ID!): MutationResponse!
   }
 `;
 

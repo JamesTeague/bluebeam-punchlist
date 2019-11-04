@@ -8,6 +8,8 @@ const resolvers = {
   },
   RootMutation: {
     createPunchItem: PunchItemResolvers.createPunchItem,
+    updatePunchItemStatus: PunchItemResolvers.updatePunchItemStatus,
+    updatePunchItemAssignee: PunchItemResolvers.updatePunchItemAssignee,
   },
   PunchItem: {
     project(root: PunchItem, args: *, context: ApolloServerContext) {
