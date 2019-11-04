@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import moment from 'moment';
 import type { PunchItem } from '../types';
 import type { SortType } from '../enums/SortTypeEnum';
@@ -6,6 +6,9 @@ import { SortTypeEnum } from '../enums';
 import type { PunchItemStatus } from '../enums/PunchItemStatusEnum';
 import type { IPunchItemRepository } from './interfaces';
 
+/**
+ * Repository for PunchItems.
+ */
 export default class MapPunchItemRepository implements IPunchItemRepository {
   punchItemMap: Map<string, PunchItem>;
 

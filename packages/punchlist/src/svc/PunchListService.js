@@ -1,12 +1,15 @@
 // @flow
 import uuid from 'uuid/v4';
+import moment from 'moment';
 import type { IProjectRepository, IPunchItemRepository } from '../dao/interfaces';
 import type { PunchItemStatus } from '../enums/PunchItemStatusEnum';
 import type { PunchItem } from '../types';
-import moment from 'moment';
 import { PunchItemStatusEnum } from '../enums';
 import type { IPunchListService } from './interfaces';
 
+/**
+ * Handles logic for PunchItems.
+ */
 export default class PunchListService implements IPunchListService {
   punchItemRepository: IPunchItemRepository;
   projectRepository: IProjectRepository;

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node lib/index.js",
-    "build": "rm -rf lib/* && babel src/ -d lib/ && flow-copy-source src/ lib/"
+    "build": "rm -rf lib/* && babel src/ -d lib/ && flow-copy-source src/ lib/",
+    "docs": "documentation build src/** -f html -o docs"
   },
   "dependencies": {
     "apollo-server": "^2.9.7",
@@ -17,6 +18,8 @@
   },
   "devDependencies": {
     "@babel/node": "^7.5.0",
+    "babel-eslint": "^10.0.3",
+    "documentation": "^12.1.2",
     "flow-bin": "^0.102.0",
     "flow-copy-source": "^2.0.2",
     "flow-typed": "^2.5.2"

@@ -2,6 +2,9 @@
 import type { User } from '../types';
 import type { IUserRepository } from './interfaces';
 
+/**
+ * Repository for Users.
+ */
 export default class MapUserRepository implements IUserRepository {
   userMap: Map<string, User>;
 

@@ -3,6 +3,9 @@ import uuid from 'uuid/v4';
 import type { IProjectRepository } from '../dao/interfaces';
 import type { IProjectService } from './interfaces';
 
+/**
+ * Handles logic for Projects.
+ */
 export default class ProjectService implements IProjectService {
   projectRepository: IProjectRepository;
 

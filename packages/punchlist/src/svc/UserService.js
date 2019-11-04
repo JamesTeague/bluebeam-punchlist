@@ -3,6 +3,9 @@ import uuid from 'uuid/v4';
 import type { IUserService } from './interfaces';
 import type { IUserRepository } from '../dao/interfaces';
 
+/**
+ * Handles logic for Users.
+ */
 export default class UserService implements IUserService {
   userRepository: IUserRepository;
 

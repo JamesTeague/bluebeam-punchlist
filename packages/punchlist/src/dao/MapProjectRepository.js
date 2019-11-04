@@ -2,6 +2,9 @@
 import type { Project } from '../types';
 import type { IProjectRepository } from './interfaces';
 
+/**
+ * Repository for Projects.
+ */
 export default class MapProjectRepository implements IProjectRepository {
   projectMap: Map<string, Project>;
 
